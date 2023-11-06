@@ -1,0 +1,22 @@
+{
+  "add-to-cart-button": {
+    "component": "Wrapper",
+    "content": {
+      "$ref": "app:marca1.add-to-cart-button#/definitions/AddToCardButton"
+    }
+  },
+  "add-to-cart-button-lvs": {
+    "component": "WrapperLvs",
+    "composition": "children"
+  },
+  "add-to-cart-button-byk-product": {
+    "component": "BuildYourKitProductButton"
+  },
+  "byk-selecteds": {
+    "component": "BuildYourKitSelecteds"
+  },
+  "byk-provider": {
+    "component": "BuildYourKitProvider",
+    "composition": "children"
+  }
+}

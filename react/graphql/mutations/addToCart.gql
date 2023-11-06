@@ -1,0 +1,15 @@
+mutation ADD_TO_CART(
+  $items: [ItemInput]
+  $marketingData: MarketingDataInput
+  $salesChannel: String
+  $allowedOutdatedData: [String!]
+) {
+  addToCart(
+    items: $items
+    marketingData: $marketingData
+    salesChannel: $salesChannel
+    allowedOutdatedData: $allowedOutdatedData
+  ) {
+    id
+  }
+}

@@ -1,0 +1,167 @@
+query GET_PRODUCT($productId: ID!) {
+  product(identifier: { field: id, value: $productId })
+    @context(provider: "vtex.search-graphql") {
+    brand
+    brandId
+    cacheId
+    categoryId
+    categoryTree {
+      id
+    }
+    clusterHighlights {
+      id
+    }
+    description
+    itemMetadata {
+      items {
+        id
+        name
+        imageUrl
+        seller
+        assemblyOptions {
+          id
+          name
+          required
+          inputValues {
+            label
+            maxLength
+            type
+            defaultValue
+            domain
+          }
+          composition {
+            minQuantity
+            maxQuantity
+            items {
+              id
+              minQuantity
+              maxQuantity
+              initialQuantity
+              priceTable
+              seller
+            }
+          }
+        }
+      }
+    }
+    items {
+      complementName
+      ean
+      images {
+        imageId
+        imageLabel
+        imageTag
+        imageUrl
+        imageText
+      }
+      itemId
+      measurementUnit
+      name
+      nameComplete
+      referenceId {
+        Key
+        Value
+      }
+      sellers {
+        sellerId
+        sellerName
+        addToCartLink
+        sellerDefault
+        commertialOffer {
+          Installments {
+            Value
+            InterestRate
+            TotalValuePlusInterestRate
+            NumberOfInstallments
+            PaymentSystemName
+            PaymentSystemGroupName
+            Name
+          }
+          discountHighlights {
+            name
+          }
+          teasers {
+            name
+            conditions {
+              minimumQuantity
+              parameters {
+                name
+                value
+              }
+            }
+            effects {
+              parameters {
+                name
+                value
+              }
+            }
+          }
+          Price
+          ListPrice
+          spotPrice
+          PriceWithoutDiscount
+          RewardValue
+          PriceValidUntil
+          AvailableQuantity
+          Tax
+          taxPercentage
+          CacheVersionUsedToCallCheckout
+        }
+      }
+      unitMultiplier
+      variations {
+        originalName
+        name
+        values
+      }
+      videos {
+        videoUrl
+      }
+    }
+    link
+    linkText
+    metaTagDescription
+    priceRange {
+      sellingPrice {
+        highPrice
+        lowPrice
+      }
+      listPrice {
+        highPrice
+        lowPrice
+      }
+    }
+    productClusters {
+      id
+      name
+    }
+    productId
+    productName
+    productReference
+    properties {
+      originalName
+      name
+      values
+    }
+    skuSpecifications {
+      field {
+        originalName
+        name
+      }
+      values {
+        originalName
+        name
+      }
+    }
+    specificationGroups {
+      originalName
+      name
+      specifications {
+        originalName
+        name
+        values
+      }
+    }
+    titleTag
+  }
+}

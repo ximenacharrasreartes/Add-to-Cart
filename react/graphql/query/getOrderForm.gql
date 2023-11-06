@@ -1,0 +1,74 @@
+query GET_ORDERFORM {
+  orderForm {
+    id
+    items {
+      additionalInfo {
+        brandName
+      }
+      attachments {
+        name
+        content
+      }
+      attachmentOfferings {
+        name
+        required
+        schema
+      }
+      bundleItems {
+        id
+      }
+      parentItemIndex
+      sellingPriceWithAssemblies
+      options {
+        id
+      }
+      availability
+      detailUrl
+      id
+      imageUrls {
+        at1x
+        at2x
+        at3x
+      }
+      listPrice
+      manualPrice
+      measurementUnit
+      modalType
+      name
+      offerings {
+        id
+      }
+      price
+      priceTags {
+        identifier
+        isPercentual
+        name
+        rawValue
+        value
+      }
+      productCategories
+      productCategoryIds
+      productRefId
+      productId
+      quantity
+      seller
+      sellingPrice
+      skuName
+      skuSpecifications {
+        fieldName
+      }
+      unitMultiplier
+      uniqueId
+      refId
+      isGift
+      priceDefinition {
+        calculatedSellingPrice
+        sellingPrices {
+          quantity
+          value
+        }
+        total
+      }
+    }
+  }
+}

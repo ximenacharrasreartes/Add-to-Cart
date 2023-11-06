@@ -1,0 +1,38 @@
+[
+  {
+    "id": "store/add-to-cart.success"
+  },
+  {
+    "id": "store/add-to-cart.duplicate"
+  },
+  {
+    "id": "store/add-to-cart.failure"
+  },
+  {
+    "id": "store/add-to-cart.see-cart"
+  },
+  {
+    "id": "store/add-to-cart.select-sku-variations"
+  },
+  {
+    "id": "admin/editor.add-to-cart.title"
+  },
+  {
+    "id": "admin/editor.add-to-cart.text.title"
+  },
+  {
+    "id": "admin/editor.add-to-cart.text.description"
+  },
+  {
+    "id": "admin/editor.add-to-cart.text-unavailable.title"
+  },
+  {
+    "id": "admin/editor.add-to-cart.text-unavailable.description"
+  },
+  {
+    "id": "store/add-to-cart.add-to-cart"
+  },
+  {
+    "id": "store/add-to-cart.label-unavailable"
+  }
+]
